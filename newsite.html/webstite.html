@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Shopify Expert & Digital Marketing Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'electric-blue': '#0080FF',
+                        'charcoal': '#36454F'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-charcoal">Your Name</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-electric-blue transition-colors">Home</a>
+                    <a href="#about" class="hover:text-electric-blue transition-colors">About</a>
+                    <a href="#services" class="hover:text-electric-blue transition-colors">Services</a>
+                    <a href="#portfolio" class="hover:text-electric-blue transition-colors">Portfolio</a>
+                    <a href="#testimonials" class="hover:text-electric-blue transition-colors">Testimonials</a>
+                    <a href="#contact" class="hover:text-electric-blue transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block py-2 hover:text-electric-blue transition-colors">Home</a>
+                <a href="#about" class="block py-2 hover:text-electric-blue transition-colors">About</a>
+                <a href="#services" class="block py-2 hover:text-electric-blue transition-colors">Services</a>
+                <a href="#portfolio" class="block py-2 hover:text-electric-blue transition-colors">Portfolio</a>
+                <a href="#testimonials" class="block py-2 hover:text-electric-blue transition-colors">Testimonials</a>
+                <a href="#contact" class="block py-2 hover:text-electric-blue transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-white to-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-4">
+                        <span class="text-charcoal">Simon Momoh</span>
+                    </h1>
+                    <h2 class="text-2xl lg:text-3xl font-semibold text-electric-blue mb-6">
+                        Shopify Expert & Digital Marketing Specialist
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8 font-medium">
+                        Design. Market. Convert.
+                    </p>
+                    <button onclick="scrollToContact()" class="bg-electric-blue text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        Work With Me
+                    </button>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="w-80 h-80 bg-gradient-to-br from-electric-blue to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
+                        <div class="w-72 h-72 bg-white rounded-full flex items-center justify-center">
+                            <img src="profilepics.png" alt="Simon Momoh" class="w-64 h-64 rounded-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-charcoal mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-electric-blue mx-auto"></div>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/3">
+                    <div class="w-64 h-64 bg-gradient-to-br from-electric-blue to-blue-600 rounded-2xl flex items-center justify-center shadow-xl mx-auto">
+                        <div class="w-56 h-56 bg-white rounded-2xl flex items-center justify-center">
+                           <img src="profilepics.png" alt="Simon Momoh" class="w-64 h-64 rounded-2xl object-cover" />
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/3">
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        I'm a passionate Shopify expert and digital marketing specialist with over 5 years of experience helping businesses grow their online presence and maximize conversions. I combine creative design with data-driven marketing strategies to deliver exceptional results for my clients.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-electric-blue"></i>
+                            <span class="font-medium">Shopify Design</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-electric-blue"></i>
+                            <span class="font-medium">SEO</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-electric-blue"></i>
+                            <span class="font-medium">Email Marketing</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-electric-blue"></i>
+                            <span class="font-medium">TikTok/Meta Ads</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-electric-blue"></i>
+                            <span class="font-medium">Graphic Design</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-electric-blue"></i>
+                            <span class="font-medium">Content Writing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-charcoal mb-4">Services</h2>
+                <div class="w-20 h-1 bg-electric-blue mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-electric-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shopping-cart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Shopify Design & Redesign</h3>
+                    <p class="text-gray-600">Custom Shopify store design and optimization for maximum conversions and user experience.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-electric-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-share-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Social Media Management</h3>
+                    <p class="text-gray-600">Strategic social media management to build brand awareness and engage your audience.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-electric-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Email Campaigns</h3>
+                    <p class="text-gray-600">Targeted email marketing campaigns that nurture leads and drive repeat purchases.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-electric-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Ad Management</h3>
+                    <p class="text-gray-600">Professional management of Facebook, Instagram, and Google Ads for optimal ROI.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-electric-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fab fa-tiktok text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">TikTok Shop Setup</h3>
+                    <p class="text-gray-600">Complete TikTok Shop setup and optimization to tap into the growing social commerce market.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-electric-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">SEO Optimization</h3>
+                    <p class="text-gray-600">Comprehensive SEO strategies to improve your search rankings and organic traffic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-charcoal mb-4">Portfolio</h2>
+                <div class="w-20 h-1 bg-electric-blue mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-gradient-to-br from-electric-blue to-blue-600 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-store text-4xl mb-2"></i>
+                            <p class="font-semibold">Fashion Store</p>
+                            <p class="text-sm opacity-90">Before/After</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold mb-2">E-commerce Redesign</h3>
+                        <p class="text-gray-600 text-sm">Complete Shopify store redesign resulting in 150% increase in conversions.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-gradient-to-br from-charcoal to-gray-600 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-mobile-alt text-4xl mb-2"></i>
+                            <p class="font-semibold">Tech Brand</p>
+                            <p class="text-sm opacity-90">Mobile Optimization</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold mb-2">Mobile-First Design</h3>
+                        <p class="text-gray-600 text-sm">Mobile optimization project that improved mobile sales by 200%.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-leaf text-4xl mb-2"></i>
+                            <p class="font-semibold">Eco Brand</p>
+                            <p class="text-sm opacity-90">Full Rebrand</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold mb-2">Brand Identity</h3>
+                        <p class="text-gray-600 text-sm">Complete brand redesign and Shopify store launch for sustainable products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-charcoal mb-4">What Clients Say</h2>
+                <div class="w-20 h-1 bg-electric-blue mx-auto"></div>
+            </div>
+            <div class="relative">
+                <div id="testimonial-slider" class="overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="testimonial-track">
+                        <div class="w-full flex-shrink-0">
+                            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                <div class="flex justify-center mb-4">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                </div>
+                                <p class="text-lg text-gray-600 mb-6 italic">"Working with Simon transformed our online store completely. Our sales increased by 180% within the first month after the redesign. Highly recommended!"</p>
+                                <div class="flex items-center justify-center">
+                                    <div class="w-12 h-12 bg-electric-blue rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-user text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold">Sarah Johnson</p>
+                                        <p class="text-sm text-gray-500">CEO, Fashion Forward</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex-shrink-0">
+                            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                <div class="flex justify-center mb-4">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                </div>
+                                <p class="text-lg text-gray-600 mb-6 italic">"The email marketing campaigns and social media strategy delivered exceptional results. Our customer engagement improved dramatically and repeat purchases doubled."</p>
+                                <div class="flex items-center justify-center">
+                                    <div class="w-12 h-12 bg-electric-blue rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-user text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold">Mike Chen</p>
+                                        <p class="text-sm text-gray-500">Founder, Tech Gadgets Pro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex-shrink-0">
+                            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                <div class="flex justify-center mb-4">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                </div>
+                                <p class="text-lg text-gray-600 mb-6 italic">"Professional, creative, and results-driven. The TikTok Shop setup and ad management services helped us reach a completely new audience and boost our revenue significantly."</p>
+                                <div class="flex items-center justify-center">
+                                    <div class="w-12 h-12 bg-electric-blue rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-user text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold">Emma Rodriguez</p>
+                                        <p class="text-sm text-gray-500">Owner, Eco Living Store</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="previousTestimonial()" class="absolute left-0
+
+                <!-- Contact Section -->
+<section id="Contact" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-charcoal mb-4">Get In Touch</h2>
+      <div class="w-20 h-1 bg-electric-blue mx-auto"></div>
+    </div>
+
+    <!-- Direct Email Button -->
+    <div class="text-center mb-10">
+      <a href="mailto:samecommerce5@gmail.com" class="bg-electric-blue text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-all duration-300 shadow-md">
+        Contact me
+      </a>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="flex justify-center space-x-6 text-electric-blue text-2xl mb-10">
+      <a href="https://www.instagram.com/simon_j4/" target="_blank" aria-label="Instagram" class="hover:text-blue-600 transition-colors">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/simon.momoh.2025" target="_blank" aria-label="Facebook" class="hover:text-blue-600 transition-colors">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="mailto:samecommerce5@gmail.com" aria-label="Email" class="hover:text-blue-600 transition-colors">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
